@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BongoFlixBD Player</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.7/shaka-player.ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.7/controls.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .back-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .back-btn:hover {
+            background: #ee5a24;
+        }
+
+        .channel-info {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .channel-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .player-container {
+            background: #000;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        #videoContainer {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        #video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .error-message {
+            background: #ff6b6b;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .channel-list {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .channel-list h3 {
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .channel-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .channel-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .channel-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .channel-btn.active {
+            background: #00b894;
+            border-color: #00b894;
+        }
+
+        .quality-selector {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .quality-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+            transition: background 0.3s ease;
+        }
+
+        .quality-btn.active {
+            background: #0984e3;
+            border-color: #0984e3;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .channel-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-btn">
+                ← Back to Home
+            </a>
+            <div class="channel-info">
+                <div class="channel-name" id="currentChannel">Loading...</div>
+            </div>
+            <div style="width: 100px;"></div> <!-- Spacer for alignment -->
+        </div>
+
+        <div class="player-container">
+            <div id="videoContainer">
+                <video id="video"
+                       poster="https://via.placeholder.com/1920x1080/1e3c72/ffffff?text=BongoFlixBD"
+                       controls autoplay>
+                </video>
+                <div class="loading" id="loadingText">Loading stream...</div>
+            </div>
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            Failed to load stream. Please try again later.
+        </div>
+
+        <div class="quality-selector">
+            <button class="quality-btn active" onclick="changeQuality('auto')">Auto</button>
+            <button class="quality-btn" onclick="changeQuality('hd')">HD</button>
+            <button class="quality-btn" onclick="changeQuality('sd')">SD</button>
+        </div>
+
+        <div class="channel-list">
+            <h3>📺 Other Channels</h3>
+            <div class="channel-buttons" id="channelButtons">
+                <!-- Channel buttons will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get channel ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const channelId = urlParams.get('id');
+        
+        // Initialize Shaka Player
+        const video = document.getElementById('video');
+        const player = new shaka.Player(video);
+        const ui = new shaka.ui.Overlay(player, document.getElementById('videoContainer'), video);
+        
+        // Configure Shaka Player
+        player.configure({
+            streaming: {
+                bufferingGoal: 30,
+                rebufferingGoal: 10,
+                lowLatencyMode: true
+            },
+            abr: {
+                enabled: true,
+                defaultBandwidthEstimate: 5000000
+            }
+        });
+
+        // Sample channels data
+        const channels = [
+            { id: "20714fd4-dc3c-46d6-924f-3038d61f027c", name: "Channel I" },
+            { id: "atn-bangla", name: "ATN Bangla" },
+            { id: "ntv", name: "NTV" },
+            { id: "btv", name: "BTV" },
+            { id: "maasranga", name: "Maasranga TV" },
+            { id: "channel9", name: "Channel 9" }
+        ];
+
+        // Load channel when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (channelId) {
+                loadChannel(channelId);
+            } else {
+                showError('No channel specified');
+            }
+            loadChannelButtons();
+        });
+
+        async function loadChannel(id) {
+            const loadingText = document.getElementById('loadingText');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            loadingText.style.display = 'block';
+            errorMessage.style.display = 'none';
+            
+            try {
+                // Update current channel name
+                const channel = channels.find(c => c.id === id) || { name: 'Unknown Channel' };
+                document.getElementById('currentChannel').textContent = channel.name;
+                
+                // Construct stream URL - adjust this based on your actual stream endpoints
+                const streamUrl = `https://bongoflixbd.top/stream.php?id=${id}`;
+                
+                console.log('Loading stream:', streamUrl);
+                
+                // Load the stream
+                await player.load(streamUrl);
+                console.log('Stream loaded successfully');
+                
+                loadingText.style.display = 'none';
+                
+                // Update active channel button
+                updateActiveChannelButton(id);
+                
+            } catch (error) {
+                console.error('Error loading stream:', error);
+                loadingText.style.display = 'none';
+                errorMessage.style.display = 'block';
+                errorMessage.textContent = `Error loading stream: ${error.message}`;
+                
+                // Try fallback streams
+                tryFallbackStreams(id);
+            }
+        }
+
+        async function tryFallbackStreams(channelId) {
+            const fallbackUrls = [
+                `https://bongoflixbd.top/stream.php?id=${channelId}`,
+                `https://bongoflixbd.top/live/${channelId}/index.m3u8`,
+                `https://bongoflixbd.top/hls/${channelId}/playlist.m3u8`
+            ];
+            
+            for (let i = 0; i < fallbackUrls.length; i++) {
+                try {
+                    await player.load(fallbackUrls[i]);
+                    console.log('Stream loaded from fallback URL:', fallbackUrls[i]);
+                    document.getElementById('errorMessage').style.display = 'none';
+                    return;
+                } catch (error) {
+                    console.error('Fallback stream failed:', fallbackUrls[i], error);
+                }
+            }
+        }
+
+        function loadChannelButtons() {
+            const channelButtons = document.getElementById('channelButtons');
+            
+            channels.forEach(channel => {
+                const button = document.createElement('button');
+                button.className = 'channel-btn';
+                if (channel.id === channelId) {
+                    button.classList.add('active');
+                }
+                button.textContent = channel.name;
+                button.onclick = () => {
+                    window.location.href = `play.html?id=${channel.id}`;
+                };
+                channelButtons.appendChild(button);
+            });
+        }
+
+        function updateActiveChannelButton(activeId) {
+            const buttons = document.querySelectorAll('.channel-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+                if (button.textContent === channels.find(c => c.id === activeId)?.name) {
+                    button.classList.add('active');
+                }
+            });
+        }
+
+        function changeQuality(quality) {
+            const buttons = document.querySelectorAll('.quality-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Implement quality change logic here
+            console.log('Changing quality to:', quality);
+        }
+
+        // Handle player errors
+        player.addEventListener('error', (event) => {
+            console.error('Player error:', event.detail);
+            showError('Stream error occurred. Please try again.');
+        });
+
+        function showError(message) {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+        }
+
+        // Fullscreen handling
+        video.addEventListener('dblclick', () => {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>
