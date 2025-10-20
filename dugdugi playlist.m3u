@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://example.com/epg.xml" 
+#EXTM3U 
 
 #EXTINF:-1 tvg-id="GaziTV" tvg-name="Gazi TV" tvg-logo="http://dugdugilive.com/img/channels/gtv.png" group-title="Sports",Gazi TV
 http://tv.dugdugilive.com:8080/0ne$ky23/GaziTV/index.m3u8
