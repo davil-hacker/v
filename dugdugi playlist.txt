@@ -1,0 +1,235 @@
+#EXTM3U x-tvg-url="https://example.com/epg.xml" 
+
+#EXTINF:-1 tvg-id="GaziTV" tvg-name="Gazi TV" tvg-logo="http://dugdugilive.com/img/channels/gtv.png" group-title="Sports",Gazi TV
+http://tv.dugdugilive.com:8080/0ne$ky23/GaziTV/index.m3u8
+
+#EXTINF:-1 tvg-id="Tsports" tvg-name="Tsports" tvg-logo="http://dugdugilive.com/img/channels/tsports.png" group-title="Sports",Tsports
+http://tv.dugdugilive.com:8080/0ne$ky23/TSports-Live/index.m3u8
+
+#EXTINF:-1 tvg-id="LiveSports" tvg-name="Live Sports" tvg-logo="http://dugdugilive.com/img/channels/livesports.png" group-title="Sports",Live Sports
+http://tv.dugdugilive.com:8080/0ne$ky23/LiveSP/index.m3u8
+
+#EXTINF:-1 tvg-id="SonySix" tvg-name="Sony Six" tvg-logo="http://dugdugilive.com/img/channels/sonysix.png" group-title="Sports",Sony Six
+http://tv.dugdugilive.com:8080/0ne$ky23/sonysix/index.m3u8
+
+#EXTINF:-1 tvg-id="Ten1" tvg-name="Ten 1" tvg-logo="http://dugdugilive.com/img/channels/ten1.png" group-title="Sports",Ten 1
+http://tv.dugdugilive.com:8080/0ne$ky23/sonyten1/index.m3u8
+
+#EXTINF:-1 tvg-id="Ten2" tvg-name="Ten 2" tvg-logo="http://dugdugilive.com/img/channels/ten2.png" group-title="Sports",Ten 2
+http://tv.dugdugilive.com:8080/0ne$ky23/sonyten2/index.m3u8
+
+#EXTINF:-1 tvg-id="Ten3" tvg-name="Ten 3" tvg-logo="http://dugdugilive.com/img/channels/ten3hd.png" group-title="Sports",Ten 3
+http://tv.dugdugilive.com:8080/0ne$ky23/sonyten3/index.m3u8
+
+#EXTINF:-1 tvg-id="StarSports" tvg-name="Star Sports" tvg-logo="http://dugdugilive.com/img/channels/starsports1.png" group-title="Sports",Star Sports
+http://tv.dugdugilive.com:8080/0ne$ky23/StarSports22/index.m3u8
+
+#EXTINF:-1 tvg-id="PTVSports" tvg-name="PTV Sports" tvg-logo="http://dugdugilive.com/img/channels/ptvsports.png" group-title="Sports",PTV Sports
+http://tv.dugdugilive.com:8080/0ne$ky23/PTV/index.m3u8
+
+#EXTINF:-1 tvg-id="Independent" tvg-name="Independent" tvg-logo="http://dugdugilive.com/img/channels/independent.png" group-title="Bangladesh",Independent
+http://tv.dugdugilive.com:8080/0ne$ky23/Independent/index.m3u8
+
+#EXTINF:-1 tvg-id="DBCNews" tvg-name="DBC News" tvg-logo="http://dugdugilive.com/img/channels/dbcnews.png" group-title="Bangladesh",DBC News
+http://tv.dugdugilive.com:8080/0ne$ky23/DBC/index.m3u8
+
+#EXTINF:-1 tvg-id="RTVBangla" tvg-name="RTV Bangla" tvg-logo="http://dugdugilive.com/img/channels/rtv.png" group-title="Bangladesh",RTV Bangla
+http://tv.dugdugilive.com:8080/0ne$ky23/RTV/index.m3u8
+
+#EXTINF:-1 tvg-id="ChannelI" tvg-name="Channel I" tvg-logo="http://dugdugilive.com/img/channels/channeli.png" group-title="Bangladesh",Channel I
+http://tv.dugdugilive.com:8080/0ne$ky23/Channel-I/index.m3u8
+
+#EXTINF:-1 tvg-id="BanglaVision" tvg-name="Bangla Vision" tvg-logo="http://dugdugilive.com/img/channels/banglavision.png" group-title="Bangladesh",Bangla Vision
+http://tv.dugdugilive.com:8080/0ne$ky23/BanglaVision/index.m3u8
+
+#EXTINF:-1 tvg-id="NTV" tvg-name="NTV" tvg-logo="http://dugdugilive.com/img/channels/ntv.png" group-title="Bangladesh",NTV
+http://tv.dugdugilive.com:8080/0ne$ky23/NTV/index.m3u8
+
+#EXTINF:-1 tvg-id="ATNNews" tvg-name="ATN News" tvg-logo="http://dugdugilive.com/img/channels/atnnews.png" group-title="Bangladesh",ATN News
+http://tv.dugdugilive.com:8080/0ne$ky23/ATN-News/index.m3u8
+
+#EXTINF:-1 tvg-id="Ekattor" tvg-name="Ekattor" tvg-logo="http://dugdugilive.com/img/channels/ekattortv.png" group-title="Bangladesh",Ekattor
+http://tv.dugdugilive.com:8080/0ne$ky23/Ekattor/index.m3u8
+
+#EXTINF:-1 tvg-id="SATV" tvg-name="SA TV" tvg-logo="http://dugdugilive.com/img/channels/satv.png" group-title="Bangladesh",SA TV
+http://tv.dugdugilive.com:8080/0ne$ky23/satv/index.m3u8
+
+#EXTINF:-1 tvg-id="SomoyTV" tvg-name="Somoy TV" tvg-logo="http://dugdugilive.com/img/channels/somoytv.png" group-title="Bangladesh",Somoy TV
+http://tv.dugdugilive.com:8080/0ne$ky23/SomoyTV/index.m3u8
+
+#EXTINF:-1 tvg-id="Channel9" tvg-name="Channel 9" tvg-logo="http://dugdugilive.com/img/channels/channel9.jpg" group-title="Bangladesh",Channel 9
+http://tv.dugdugilive.com:8080/0ne$ky23/Channel9/index.m3u8
+
+#EXTINF:-1 tvg-id="DeeptoTv" tvg-name="Deepto TV" tvg-logo="http://dugdugilive.com/img/channels/deeptotv.png" group-title="Bangladesh",Deepto TV
+http://tv.dugdugilive.com:8080/0ne$ky23/Deepto/index.m3u8
+
+#EXTINF:-1 tvg-id="Maasranga" tvg-name="Maasranga" tvg-logo="http://dugdugilive.com/img/channels/maasranga.png" group-title="Bangladesh",Maasranga
+http://tv.dugdugilive.com:8080/0ne$ky23/Massranga/index.m3u8
+
+#EXTINF:-1 tvg-id="NagorikTv" tvg-name="Nagorik TV" tvg-logo="http://dugdugilive.com/img/channels/nagoriktv.png" group-title="Bangladesh",Nagorik TV
+http://tv.dugdugilive.com:8080/0ne$ky23/Nagorik/index.m3u8
+
+#EXTINF:-1 tvg-id="BTV" tvg-name="BTV" tvg-logo="http://dugdugilive.com/img/channels/btvworld.png" group-title="Bangladesh",BTV
+http://tv.dugdugilive.com:8080/0ne$ky23/BTV/index.m3u8
+
+#EXTINF:-1 tvg-id="BanglaTv" tvg-name="Bangla TV" tvg-logo="http://dugdugilive.com/img/channels/banglatv.png" group-title="Bangladesh",Bangla TV
+http://tv.dugdugilive.com:8080/0ne$ky23/BanglaTV/index.m3u8
+
+#EXTINF:-1 tvg-id="JamunaTv" tvg-name="Jamuna TV" tvg-logo="http://dugdugilive.com/img/channels/jamunatv.png" group-title="Bangladesh",Jamuna TV
+http://tv.dugdugilive.com:8080/0ne$ky23/JamunaTV/index.m3u8
+
+#EXTINF:-1 tvg-id="Channel24" tvg-name="Channel 24" tvg-logo="http://dugdugilive.com/img/channels/channel24.png" group-title="Bangladesh",Channel 24
+http://tv.dugdugilive.com:8080/0ne$ky23/Channel24/index.m3u8
+
+#EXTINF:-1 tvg-id="News24" tvg-name="News 24" tvg-logo="http://dugdugilive.com/img/channels/news24.png" group-title="Bangladesh",News 24
+http://tv.dugdugilive.com:8080/0ne$ky23/News24/index.m3u8
+
+#EXTINF:-1 tvg-id="ATNBangla" tvg-name="ATN Bangla" tvg-logo="http://dugdugilive.com/img/channels/atnbangla.png" group-title="Bangladesh",ATN Bangla
+http://tv.dugdugilive.com:8080/0ne$ky23/AtnBangla/index.m3u8
+
+#EXTINF:-1 tvg-id="Boishakhi" tvg-name="Boishakhi" tvg-logo="http://dugdugilive.com/img/channels/boishakhitv.png" group-title="Bangladesh",Boishakhi
+http://tv.dugdugilive.com:8080/0ne$ky23/Boishakhi/index.m3u8
+
+#EXTINF:-1 tvg-id="EkusheyTv" tvg-name="Ekushey TV" tvg-logo="http://dugdugilive.com/img/channels/ekushey.png" group-title="Bangladesh",Ekushey TV
+http://tv.dugdugilive.com:8080/0ne$ky23/EkusheyTV/index.m3u8
+
+#EXTINF:-1 tvg-id="GaanBangla" tvg-name="Gaan Bangla" tvg-logo="http://dugdugilive.com/img/channels/gannbangla.png" group-title="Bangladesh",Gaan Bangla
+http://tv.dugdugilive.com:8080/0ne$ky23/GaanBangla/index.m3u8
+
+#EXTINF:-1 tvg-id="AsianTv" tvg-name="Asian TV" tvg-logo="http://dugdugilive.com/img/channels/asiantv.png" group-title="Bangladesh",Asian TV
+http://tv.dugdugilive.com:8080/0ne$ky23/Asian/index.m3u8
+
+#EXTINF:-1 tvg-id="DurontoTV" tvg-name="Duronto TV" tvg-logo="http://dugdugilive.com/img/channels/duronto.png" group-title="Bangladesh",Duronto TV
+http://tv.dugdugilive.com:8080/0ne$ky23/AnandaTV/index.m3u8
+
+#EXTINF:-1 tvg-id="DeshTv" tvg-name="Desh TV" tvg-logo="http://dugdugilive.com/img/channels/deshtv.png" group-title="Bangladesh",Desh TV
+http://tv.dugdugilive.com:8080/0ne$ky23/DeshTV/index.m3u8
+
+#EXTINF:-1 tvg-id="MYTV" tvg-name="MY TV" tvg-logo="http://dugdugilive.com/img/channels/mytv.png" group-title="Bangladesh",MY TV
+http://tv.dugdugilive.com:8080/0ne$ky23/mytv/index.m3u8
+
+#EXTINF:-1 tvg-id="MohonaTv" tvg-name="Mohona TV" tvg-logo="http://dugdugilive.com/img/channels/mohonatv.png" group-title="Bangladesh",Mohona TV
+http://tv.dugdugilive.com:8080/0ne$ky23/Mohona/index.m3u8
+
+#EXTINF:-1 tvg-id="PeaceTv" tvg-name="Peace TV" tvg-logo="http://dugdugilive.com/img/channels/peacetv.png" group-title="Bangladesh",Peace TV
+http://tv.dugdugilive.com:8080/0ne$ky23/ATNIslamic/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBangla" tvg-name="Zee Bangla" tvg-logo="http://dugdugilive.com/img/channels/zeebangla.png" group-title="Kolkata",Zee Bangla
+http://tv.dugdugilive.com:8080/0ne$ky23/ZeeBangla/index.m3u8
+
+#EXTINF:-1 tvg-id="StarJalsa" tvg-name="Star Jalsa" tvg-logo="http://dugdugilive.com/img/channels/starjalsha.png" group-title="Kolkata",Star Jalsa
+http://tv.dugdugilive.com:8080/0ne$ky23/starJalsa/index.m3u8
+
+#EXTINF:-1 tvg-id="JalshaMovies" tvg-name="Jalsha Movies" tvg-logo="http://dugdugilive.com/img/channels/jalshamovies.png" group-title="Kolkata",Jalsha Movies
+http://tv.dugdugilive.com:8080/0ne$ky23/jalshamovies/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsBangla" tvg-name="Colors Bangla" tvg-logo="http://dugdugilive.com/img/channels/colorsbangla.png" group-title="Kolkata",Colors Bangla
+http://tv.dugdugilive.com:8080/0ne$ky23/colors-bangla/index.m3u8
+
+#EXTINF:-1 tvg-id="SangeetBangla" tvg-name="Sangeet Bangla" tvg-logo="http://dugdugilive.com/img/channels/sangeetbangla.png" group-title="Kolkata",Sangeet Bangla
+http://tv.dugdugilive.com:8080/0ne$ky23/sangeetbangla/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeBanglaCinema" tvg-name="Zee Bangla Cinema" tvg-logo="http://dugdugilive.com/img/channels/zeebanglacinema.png" group-title="Kolkata",Zee Bangla Cinema
+http://tv.dugdugilive.com:8080/0ne$ky23/ZeeBnCinema/index.m3u8
+
+#EXTINF:-1 tvg-id="DhoomMusic" tvg-name="Dhoom Music" tvg-logo="http://dugdugilive.com/img/channels/dhoom.png" group-title="Kolkata",Dhoom Music
+http://tv.dugdugilive.com:8080/0ne$ky23/Dhoom/index.m3u8
+
+#EXTINF:-1 tvg-id="MusicXpress" tvg-name="Music Xpress" tvg-logo="http://dugdugilive.com/img/channels/mtunes.png" group-title="Hindi",Music Xpress
+http://tv.dugdugilive.com:8080/0ne$ky23/DilSe/index.m3u8
+
+#EXTINF:-1 tvg-id="HungamaMusic" tvg-name="Hungama Music" tvg-logo="http://dugdugilive.com/img/channels/bollywood.png" group-title="Hindi",Hungama Music
+http://tv.dugdugilive.com:8080/0ne$ky23/Kadak/index.m3u8
+
+#EXTINF:-1 tvg-id="B4UMusic" tvg-name="B4u Music" tvg-logo="http://dugdugilive.com/img/channels/b4u.png" group-title="Hindi",B4u Music
+http://tv.dugdugilive.com:8080/0ne$ky23/B4U/index.m3u8
+
+#EXTINF:-1 tvg-id="ZoomMusic" tvg-name="Zoom Music" tvg-logo="http://dugdugilive.com/img/channels/zoom.png" group-title="Hindi",Zoom Music
+http://tv.dugdugilive.com:8080/0ne$ky23/Zoom/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeEtc" tvg-name="Zee Etc" tvg-logo="http://dugdugilive.com/img/channels/zeeetc.png" group-title="Hindi",Zee Etc
+http://tv.dugdugilive.com:8080/0ne$ky23/ZetcE24/index.m3u8
+
+#EXTINF:-1 tvg-id="MusicMasti" tvg-name="Music Masti" tvg-logo="http://dugdugilive.com/img/channels/musicmasti.png" group-title="Hindi",Music Masti
+http://tv.dugdugilive.com:8080/0ne$ky23/MTVin/index.m3u8
+
+#EXTINF:-1 tvg-id="9xMusic" tvg-name="9x Music" tvg-logo="http://dugdugilive.com/img/channels/9xo.png" group-title="Hindi",9x Music
+http://tv.dugdugilive.com:8080/0ne$ky23/9xM/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinema" tvg-name="Zee Cinema" tvg-logo="http://dugdugilive.com/img/channels/zeecinemahd.png" group-title="Hindi",Zee Cinema
+http://tv.dugdugilive.com:8080/0ne$ky23/ZeeCinema/index.m3u8
+
+#EXTINF:-1 tvg-id="AndPictures" tvg-name="And Pictures" tvg-logo="http://dugdugilive.com/img/channels/&pictureshd.png" group-title="Hindi",And Pictures
+http://tv.dugdugilive.com:8080/0ne$ky23/AndPictures/index.m3u8
+
+#EXTINF:-1 tvg-id="StarPlus" tvg-name="Star Plus" tvg-logo="http://dugdugilive.com/img/channels/starplus.png" group-title="Hindi",Star Plus
+http://tv.dugdugilive.com:8080/0ne$ky23/StarPlus/index.m3u8
+
+#EXTINF:-1 tvg-id="ColorsTv" tvg-name="Colors TV" tvg-logo="http://dugdugilive.com/img/channels/colors.png" group-title="Hindi",Colors TV
+http://tv.dugdugilive.com:8080/0ne$ky23/Colors/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyTv" tvg-name="Sony TV" tvg-logo="http://dugdugilive.com/img/channels/sonytv.png" group-title="Hindi",Sony TV
+http://tv.dugdugilive.com:8080/0ne$ky23/SonyTV/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeTv" tvg-name="Zee TV" tvg-logo="http://dugdugilive.com/img/channels/zeetv.png" group-title="Hindi",Zee TV
+http://tv.dugdugilive.com:8080/0ne$ky23/ZeeTV/index.m3u8
+
+#EXTINF:-1 tvg-id="StarBharat" tvg-name="Star Bharat" tvg-logo="http://dugdugilive.com/img/channels/starbharat.png" group-title="Hindi",Star Bharat
+http://tv.dugdugilive.com:8080/0ne$ky23/StarBharat/index.m3u8
+
+#EXTINF:-1 tvg-id="Zing" tvg-name="Zing" tvg-logo="http://dugdugilive.com/img/channels/zing.png" group-title="Hindi",Zing
+http://tv.dugdugilive.com:8080/0ne$ky23/MTVin/index.m3u8
+
+#EXTINF:-1 tvg-id="AndTv" tvg-name="And TV" tvg-logo="http://dugdugilive.com/img/channels/andtv.png" group-title="Hindi",And TV
+http://tv.dugdugilive.com:8080/0ne$ky23/AndTV/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeClassic" tvg-name="Zee Classic" tvg-logo="http://dugdugilive.com/img/channels/zeeclassic.png" group-title="Hindi",Zee Classic
+http://tv.dugdugilive.com:8080/0ne$ky23/ZBolloyWoord/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyMax" tvg-name="Sony Max" tvg-logo="http://dugdugilive.com/img/channels/sonymaxhd.png" group-title="Hindi",Sony Max
+http://tv.dugdugilive.com:8080/0ne$ky23/SonyMax/index.m3u8
+
+#EXTINF:-1 tvg-id="StarGold" tvg-name="Star Gold" tvg-logo="http://dugdugilive.com/img/channels/stargold.png" group-title="Hindi",Star Gold
+http://tv.dugdugilive.com:8080/0ne$ky23/StarGold/index.m3u8
+
+#EXTINF:-1 tvg-id="RishteyCineplex" tvg-name="Rishtey Cineplex" tvg-logo="http://dugdugilive.com/img/channels/rishteycineplex.png" group-title="Hindi",Rishtey Cineplex
+http://tv.dugdugilive.com:8080/0ne$ky23/CinePlex/index.m3u8
+
+#EXTINF:-1 tvg-id="B4UMovies" tvg-name="B4U Movies" tvg-logo="http://dugdugilive.com/img/channels/b4umovies.png" group-title="Hindi",B4U Movies
+http://tv.dugdugilive.com:8080/0ne$ky23/B4Umovies/index.m3u8
+
+#EXTINF:-1 tvg-id="BFlixMovies" tvg-name="BFlix Movies" tvg-logo="http://dugdugilive.com/img/channels/bflix.png" group-title="Hindi",BFlix Movies
+http://tv.dugdugilive.com:8080/0ne$ky23/bFlix/index.m3u8
+
+#EXTINF:-1 tvg-id="9xJalwa" tvg-name="9x Jalwa" tvg-logo="http://dugdugilive.com/img/channels/9xjalwa.png" group-title="Hindi",9x Jalwa
+http://tv.dugdugilive.com:8080/0ne$ky23/9xjalwa/index.m3u8
+
+#EXTINF:-1 tvg-id="SonyPix" tvg-name="Sony Pix" tvg-logo="http://dugdugilive.com/img/channels/sonypix.png" group-title="English",Sony Pix
+http://tv.dugdugilive.com:8080/0ne$ky23/SonyPix/index.m3u8
+
+#EXTINF:-1 tvg-id="Nick" tvg-name="Nick" tvg-logo="http://dugdugilive.com/img/channels/nick.png" group-title="English",Nick
+http://tv.dugdugilive.com:8080/0ne$ky23/NickBN/index.m3u8
+
+#EXTINF:-1 tvg-id="Discovery" tvg-name="Discovery" tvg-logo="http://dugdugilive.com/img/channels/discovery.png" group-title="English",Discovery
+http://tv.dugdugilive.com:8080/0ne$ky23/Discovery/index.m3u8
+
+#EXTINF:-1 tvg-id="StarMovies" tvg-name="Star Movies" tvg-logo="http://dugdugilive.com/img/channels/starmovies.png" group-title="English",Star Movies
+http://tv.dugdugilive.com:8080/0ne$ky23/StarMovies/index.m3u8
+
+#EXTINF:-1 tvg-id="AndFlix" tvg-name="And Flix" tvg-logo="http://dugdugilive.com/img/channels/andflix.png" group-title="English",And Flix
+http://tv.dugdugilive.com:8080/0ne$ky23/AndFlix/index.m3u8
+
+#EXTINF:-1 tvg-id="AndPrive" tvg-name="And Prive" tvg-logo="http://dugdugilive.com/img/channels/andprive.png" group-title="English",And Prive
+http://tv.dugdugilive.com:8080/0ne$ky23/AndPrive/index.m3u8
+
+#EXTINF:-1 tvg-id="HBO" tvg-name="HBO" tvg-logo="http://dugdugilive.com/img/channels/hbo.png" group-title="English",HBO
+http://tv.dugdugilive.com:8080/0ne$ky23/HBO/index.m3u8
+
+#EXTINF:-1 tvg-id="CartoonNetwork" tvg-name="Cartoon Network" tvg-logo="http://dugdugilive.com/img/channels/cartoonnetwork.png" group-title="English",Cartoon Network
+http://tv.dugdugilive.com:8080/0ne$ky23/Cartoon/index.m3u8
+
+#EXTINF:-1 tvg-id="BBCNews" tvg-name="BBC News" tvg-logo="http://dugdugilive.com/img/channels/bbcnews.png" group-title="English",BBC News
+http://tv.dugdugilive.com:8080/0ne$ky23/bbc/index.m3u8
+
+#EXTINF:-1 tvg-id="AlJazeeraNews" tvg-name="AlJazeera News" tvg-logo="http://dugdugilive.com/img/channels/aljazeera.png" group-title="English",AlJazeera News
+http://tv.dugdugilive.com:8080/0ne$ky23/aljajira/index.m3u8
